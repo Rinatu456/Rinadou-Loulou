@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>RinadoUwU et LouLoUwU</title>
+  <style>
+  
+  .site-presentation {
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px;
+    position: relative;
+  }
+
+  .rainbow-border {
+    padding: 4px;
+    background: linear-gradient(270deg,
+      #ff0000, #ff9900, #ffff00, #33cc33,
+      #00ccff, #6600cc, #ff3399, #ff0000);
+    background-size: 1600% 1600%;
+    animation: rainbowMove 10s linear infinite;
+    border-radius: 25px;
+  }
+
+  .presentation-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    animation: fadeInUp 1s ease;
+    max-width: 800px;
+  }
+
+  .presentation-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff97d2;
+  }
+
+  .presentation-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes rainbowMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .fancy-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #ff0057, #ff9500, #ffd500, #00ffcc, #0066ff, #ff00f7);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowShift 5s ease infinite;
+    margin: 40px 0 20px 0;
+    user-select: none;
+  }
+
+  .fancy-title span {
+    font-style: italic;
+  }
+  .fancy-title-wrapper {
+  background: linear-gradient(270deg, #ff0057, #ff9500, #ffd500, #00ffcc, #0066ff, #ff00f7);
+  background-size: 1200% 1200%;
+  animation: rainbowMove 10s ease infinite;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  margin: 0 auto 40px auto;
+  text-align: center;
+  user-select: none;
+}
+
+  @keyframes rainbowShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .date-list {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  .date-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.date-list ul li {
+  flex: 0 0 calc(100% / 6 - 10px);
+}
+
+.date-list ul li a {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
+  font-size: 14px;
+}
+
+.date-list ul li a:hover {
+  background-color: #c0c0c0;
+}
+
+.year-section {
+  margin-bottom: 30px;
+}
+
+.year-section h3 {
+  font-size: 1.5em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('lol.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  header {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .gif-grid {
+    display: grid;
+    grid-template-areas:
+      "corner-tl top corner-tr"
+      "left title right"
+      "corner-bl bottom corner-br";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .tenor-wrapper {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+
+  .tenor-gif-embed {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+h1 {
+  background-color: #264653;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #2a9d8f,
+    #2a9d8f 10px,
+    #264653 10px,
+    #264653 20px
+  );
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #2a9d8f;
+  color: white;
+  grid-area: title;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+  .corner-tl { grid-area: corner-tl; }
+  .corner-tr { grid-area: corner-tr; }
+  .corner-bl { grid-area: corner-bl; }
+  .corner-br { grid-area: corner-br; }
+  .top       { grid-area: top; display: flex; gap: 10px; }
+  .bottom    { grid-area: bottom; display: flex; gap: 10px; }
+  .left      { grid-area: left; display: flex; flex-direction: column; gap: 10px; }
+  .right     { grid-area: right; display: flex; flex-direction: column; gap: 10px; }
+
+  @media (max-width: 768px) {
+    .tenor-wrapper {
+      width: 120px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .fancy-title {
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+    }
+  }
+  .year-section {
+  margin-bottom: 40px;
+}
+
+.year-section {
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 120, 170, 0.3);
+}
+
+.year-section h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.year-section hr {
+  border: none;
+  height: 2px;
+  background: #fff;
+  width: 60%;
+  margin: 10px auto 20px auto;
+}
+
+.year-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.year-section ul li {
+  flex: 0 0 calc(100% / 6 - 15px); /* 6 boutons max par ligne avec espace */
+  text-align: center;
+}
+
+.year-section ul li a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #ff4d94;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.year-section ul li a:hover {
+  background-color: #ff4d94;
+  color: #fff;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="gif-grid">
+    <!-- Coins avec GIF Party Blob -->
+    <div class="tenor-wrapper corner-tl">
+      <div class="tenor-gif-embed" data-postid="15364435078994391586" data-share-method="host"></div>
+    </div>
+    <div class="tenor-wrapper corner-tr">
+      <div class="tenor-gif-embed" data-postid="15364435078994391586" data-share-method="host"></div>
+    </div>
+    <div class="tenor-wrapper corner-bl">
+      <div class="tenor-gif-embed" data-postid="15364435078994391586" data-share-method="host"></div>
+    </div>
+    <div class="tenor-wrapper corner-br">
+      <div class="tenor-gif-embed" data-postid="15364435078994391586" data-share-method="host"></div>
+    </div>
+
+    <!-- Ligne du haut -->
+    <div class="top">
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="1024402880871097508" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="21158905" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="25352652" data-share-method="host"></div>
+      </div>
+    </div>
+
+    <!-- Ligne du bas -->
+    <div class="bottom">
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="23078710" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="25841984" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="14669209222310596068" data-share-method="host"></div>
+      </div>
+    </div>
+
+    <!-- Colonne gauche -->
+    <div class="left">
+      <div class="tenor-wrapper">
+        <iframe src="https://tenor.com/embed/12802287" allowfullscreen loading="lazy" style="border: none;"></iframe>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="1971744965880922567" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="17722682899754132605" data-share-method="host"></div>
+      </div>
+    </div>
+
+    <!-- Colonne droite -->
+    <div class="right">
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="1616292287979326986" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="16457679308646479862" data-share-method="host"></div>
+      </div>
+      <div class="tenor-wrapper">
+        <div class="tenor-gif-embed" data-postid="26714447" data-share-method="host"></div>
+      </div>
+    </div>
+
+    <!--  titre animé -->
+    <h1 class="fancy-title-wrapper">
+  <span class="fancy-title">Les Papotages <span>Déjantés</span> de Rinadou &amp; Loulou</span>
+</h1>
+
+  </div>
+</header>
+
+<section class="site-presentation">
+  <div class="rainbow-border">
+    <div class="presentation-box">
+      <h2>Bienvenue dans l’univers déjanté de <br>Rinadou et Loulou !<hr></hr> </h2>
+      <p>
+        Préparez-vous à plonger dans un tourbillon d’aventures aussi farfelues que rocambolesques ! Loulou, l’intrépide rêveur, et Rinadou, le complice toujours prêt à en découdre, vous embarquent dans des péripéties où l’imprévu et l’absurde sont rois. Entre situations loufoques, rencontres improbables et quiproquos hilarants, chaque épisode vous promet éclats de rire et surprise à chaque tournant.
+      </p>
+      <p>
+        Que vous soyez amateur d’histoires délirantes ou simplement curieux de découvrir des personnages hauts en couleur, ce site est votre nouvelle destination favorite pour une dose d’évasion et de bonne humeur. Alors, attachez vos ceintures, l’aventure avec Rinadou et Loulou commence ici !
+      </p>
+    </div>
+  </div>
+</section>
+
+<<div class="date-list">
+
+  <!-- 2023 -->
+<div class="year-section">
+  <h3>2023</h3>
+  <hr>
+  <ul>
+    <li><a href="2023/2023_09_08.html">8 septembre</a></li>
+    <li><a href="2023/2023_10_07.html">7 octobre</a></li>
+    <li><a href="2023/2023_10_24.html">24 octobre</a></li>
+    <li><a href="2023/2023_10_29.html">29 octobre</a></li>
+  </ul>
+</div>
+
+  <!-- 2024 -->
+<div class="year-section">
+  <h3>2024</h3>
+  <hr>
+  <ul>
+    <li><a href="2024/2024_01_31.html">31 janvier</a></li>
+    <li><a href="2024/2024_02_25.html">25 février</a></li>
+    <li><a href="2024/2024_04_06.html">6 avril</a></li>
+    <li><a href="2024/2024_04_17.html">17 avril</a></li>
+    <li><a href="2024/2024_04_19.html">19 avril</a></li>
+    <li><a href="2024/2024_05_15.html">15 mai</a></li>
+    <li><a href="2024/2024_06_29.html">29 juin</a></li>
+    <li><a href="2024/2024_06_30.html">30 juin</a></li>
+    <li><a href="2024/2024_07_11.html">11 juillet</a></li>
+    <li><a href="2024/2024_07_14.html">14 juillet</a></li>
+    <li><a href="2024/2024_07_19.html">19 juillet</a></li>
+    <li><a href="2024/2024_08_16.html">16 août</a></li>
+    <li><a href="2024/2024_08_17.html">17 août</a></li>
+    <li><a href="2024/2024_08_24.html">24 août</a></li>
+    <li><a href="2024/2024_10_26.html">26 octobre</a></li>
+    <li><a href="2024/2024_11_08.html">8 novembre</a></li>
+    <li><a href="2024/2024_11_25.html">25 novembre</a></li>
+    <li><a href="2024/2024_11_26.html">26 novembre</a></li>
+    <li><a href="2024/2024_12_05.html">5 décembre</a></li>
+    <li><a href="2024/2024_12_28.html">28 décembre</a></li>
+    <li><a href="2024/2024_12_30.html">30 décembre</a></li>
+  </ul>
+</div>
+
+<!-- 2025 -->
+<div class="year-section">
+  <h3>2025</h3>
+  <hr>
+  <ul>
+    <li><a href="2025/2025_01_31.html">31 janvier</a></li>
+    <li><a href="2025/2025_02_01.html">1 février</a></li>
+    <li><a href="2025/2025_06_07.html">7 juin</a></li>
+  </ul>
+</div>
+
+</div>
+
+<script src="https://tenor.com/embed.js"></script>
+</body>
+</html>
